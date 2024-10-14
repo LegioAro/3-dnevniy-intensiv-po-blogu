@@ -1,0 +1,26 @@
+.btn {
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 3px 39px 0 rgba(66, 122, 247, 0.5);
+  background: #427af7;
+  padding: 22px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+  }
+}

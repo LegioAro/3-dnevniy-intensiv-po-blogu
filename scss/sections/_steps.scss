@@ -1,0 +1,158 @@
+.steps {
+  padding-bottom: 143px;
+  padding-top: 213px;
+  border-radius: 100% 100% 0% 0% / 12% 12% 0% 0%;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 932px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__title-block {
+    padding-top: 30px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    max-width: 357px;
+    margin-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__title-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 145%;
+  }
+
+  &__items-block {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: #427af7;
+      opacity: 0.2;
+      left: 1px;
+      top: 0;
+    }
+  }
+
+  &__items-line {
+    border-radius: 100px;
+    display: flex;
+    flex-shrink: 0;
+    width: 4px;
+    height: 75px;
+    box-shadow: 0 3px 39px 0 rgba(66, 122, 247, 0.5);
+    background: #427af7;
+    margin-right: 58px;
+    position: sticky;
+    top: 50%;
+    bottom: 0;
+  }
+
+  &__items {
+    padding: 30px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      .steps__item-num {
+        color: #427af7;
+      }
+    }
+  }
+
+  &__item-num {
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-shadow: 0 4px 30px 0 rgba(66, 122, 247, 0.3);
+    margin-right: 50px;
+    transition: 0.3s;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media (max-width: 950px) {
+  .steps {
+    padding-top: 95px;
+    border-radius: 100% 100% 0% 0% / 5% 5% 0% 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps {
+    padding-bottom: 40px;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title-block {
+      padding-top: 0;
+      position: static;
+      text-align: center;
+      margin-bottom: 38px;
+      margin-right: 0;
+    }
+    &__title {
+      margin-bottom: 5px;
+      br {
+        display: none;
+      }
+    }
+    &__title-text {
+      font-size: 16px;
+    }
+    &__items-line {
+      margin-right: 44px;
+      height: 55px;
+    }
+    &__items {
+      max-width: 500px;
+    }
+    &__item {
+      align-items: flex-start;
+    }
+    &__item-num {
+      font-size: 29px;
+      margin-right: 38px;
+    }
+    &__item-text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .steps {
+    border-radius: 100% 100% 0% 0% / 1% 1% 0% 0%;
+  }
+}

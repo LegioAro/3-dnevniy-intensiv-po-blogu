@@ -1,0 +1,35 @@
+body {
+  background-color: #090909;
+  color: #fff;
+  font-family: var(--font-1);
+  font-weight: normal;
+  position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1212px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.decor {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.--light {
+  color: #000;
+  background-color: #fff;
+  margin-top: -1px;
+}

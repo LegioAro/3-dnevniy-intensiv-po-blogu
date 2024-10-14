@@ -1,0 +1,19 @@
+:root {
+  //fonts
+  --font-1: 'Open Sans', sans-serif;
+  --font-2: 'Neue Machina', sans-serif;
+  --font-3: 'Montserrat', sans-serif;
+  --font-4: 'Oswald', sans-serif;
+
+  //color
+
+  //gradient
+  --gradient: linear-gradient(110deg, #6348ff 0%, #ff828f 51.5%, #ffc162 100%);
+}
+
+@mixin text-gradient {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

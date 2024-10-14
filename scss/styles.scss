@@ -1,0 +1,23 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//Moduls
+@import './moduls/title';
+@import './moduls/btn';
+
+//Blocks
+@import './blocks/block';
+
+//Sections
+@import './sections/header';
+@import './sections/cover';
+@import './sections/reasons';
+@import './sections/program';
+@import './sections/steps';
+@import './sections/description';
+@import './sections/who';
+@import './sections/info';
+@import './sections/footer';

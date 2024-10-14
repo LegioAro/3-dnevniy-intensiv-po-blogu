@@ -1,0 +1,15 @@
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Neue Machina', sans-serif;
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../../fonts/NeueMachina-Ultrabold.eot');
+  src: url('../../fonts/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NeueMachina-Ultrabold.woff2') format('woff2'),
+    url('../../fonts/NeueMachina-Ultrabold.woff') format('woff'),
+    url('../../fonts/NeueMachina-Ultrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

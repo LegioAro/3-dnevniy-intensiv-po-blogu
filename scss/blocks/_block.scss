@@ -1,0 +1,59 @@
+.block {
+  // overflow: hidden;
+  position: relative;
+  padding: 79px 0;
+  color: #000;
+
+  &__content {
+    background-color: #fff;
+    isolation: isolate;
+    position: relative;
+    padding-top: 210px;
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   width: 1528px;
+    //   height: 158px;
+    //   left: 50%;
+    //   top: -79px;
+    //   transform: translate(-50%, 0);
+    //   background-image: url(../img/block/eclips-1.png);
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   z-index: -1;
+    //   pointer-events: none;
+    // }
+  }
+}
+
+@media (min-width: 1528px) {
+  .block {
+    &__content {
+      // &::before {
+      //   width: 1920px;
+      //   height: 230px;
+      // }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .block {
+    padding: 150px 0;
+    &__content {
+      // &::before {
+      //   top: -120px;
+      //   width: 2560px;
+      //   height: 300px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    &__content {
+      padding-top: 100px;
+    }
+  }
+}

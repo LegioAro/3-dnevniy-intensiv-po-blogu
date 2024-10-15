@@ -4,6 +4,7 @@
   &__wrapper {
     position: relative;
     z-index: 1;
+    max-width: 1440px;
   }
 
   &__img {
@@ -104,6 +105,15 @@
     left: -33px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1920px) {
+  .cover {
+    &__img {
+      right: auto;
+      left: 50%;
+    }
   }
 }
 

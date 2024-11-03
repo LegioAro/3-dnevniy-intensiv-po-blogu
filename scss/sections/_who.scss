@@ -41,6 +41,7 @@
 
   &__desc-title {
     margin-bottom: 24px;
+    text-align: center;
   }
 
   &__desc-list {
@@ -177,7 +178,8 @@
       margin-bottom: 30px;
     }
     &__desc-suptitle {
-      font-size: 12px;
+      font-size: 16px;
+      text-align: center;
       margin-bottom: 10px;
     }
     &__desc-title {
@@ -189,21 +191,30 @@
       align-items: center;
     }
     &__desc-list {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     &__info-title {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 40px;
     }
+    &__info-item {
+      align-items: flex-start;
+    }
+    &__info-item-title {
+      font-size: 16px;
+    }
     &__info-item-elem-num {
-      font-size: 14px;
+      font-size: 20px;
     }
     &__info-item-elem-text {
-      font-size: 10px;
+      font-size: 14px;
     }
     &__info-item-elem {
       margin-bottom: 10px;
+    }
+    &__info-item-img {
+      max-width: 280px;
     }
   }
 }

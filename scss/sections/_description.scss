@@ -143,10 +143,10 @@
     }
     &__text-big {
       margin-bottom: 7px;
-      font-size: 14px;
+      font-size: 20px;
     }
     &__text {
-      font-size: 10px;
+      font-size: 16px;
       margin-bottom: 14px;
     }
     &__desc-wrapper {
@@ -155,7 +155,7 @@
     &__desc {
       padding: 12px 15px;
       text-align: center;
-      font-size: 9px;
+      font-size: 18px;
       margin-bottom: 20px;
       &::before {
         display: none;
@@ -167,12 +167,22 @@
 @media (max-width: 500px) {
   .description {
     &__wrapper {
-      max-width: 355px;
     }
     &__desc-wrapper,
     &__desc {
       width: 100%;
       max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .description {
+    &__wrapper {
+      border-radius: 5px;
+      &::before {
+        border-radius: 5px;
+      }
     }
   }
 }

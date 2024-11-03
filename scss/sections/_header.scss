@@ -108,7 +108,7 @@
     }
     &__infos {
       flex-direction: column;
-      max-width: 115px;
+      max-width: 280px;
       align-items: flex-start;
     }
     &__info {
@@ -117,6 +117,9 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    &__info-text {
+      font-size: 16px;
     }
   }
 }

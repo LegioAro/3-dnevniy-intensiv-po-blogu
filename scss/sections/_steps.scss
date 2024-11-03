@@ -109,8 +109,6 @@
 
 @media (max-width: 768px) {
   .steps {
-    padding-bottom: 40px;
-
     &__wrapper {
       flex-direction: column;
       align-items: center;
@@ -129,7 +127,7 @@
       }
     }
     &__title-text {
-      font-size: 16px;
+      font-size: 20px;
     }
     &__items-line {
       margin-right: 44px;
@@ -146,7 +144,7 @@
       margin-right: 38px;
     }
     &__item-text {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 }
@@ -154,5 +152,16 @@
 @media (max-width: 500px) {
   .steps {
     border-radius: 100% 100% 0% 0% / 1% 1% 0% 0%;
+  }
+}
+
+@media (max-width: 450px) {
+  .steps {
+    &__items-line {
+      margin-right: 20px;
+    }
+    &__item-num {
+      margin-right: 20px;
+    }
   }
 }
